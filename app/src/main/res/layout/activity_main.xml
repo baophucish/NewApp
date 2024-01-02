@@ -41,7 +41,7 @@
         android:layout_below="@id/ToolBar"
         tools:listitem="@layout/categories_rv_item"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
-    
+
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

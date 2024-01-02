@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardView"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_margin="8dp"
     app:cardBackgroundColor="@color/gray"
+    android:layout_margin="5dp"
     app:cardCornerRadius="4dp">
-    
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:id="@+id/idIVNews"
+            android:id="@+id/ivNews"
             android:scaleType="centerCrop"/>
 
         <TextView
-            android:id="@+id/idTVNewsHeading"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/idIVNews"
+            android:id="@+id/tvNewsHeading"
+            android:layout_below="@id/ivNews"
             android:layout_marginStart="3dp"
             android:layout_marginTop="3dp"
             android:layout_marginEnd="3dp"
@@ -30,13 +31,13 @@
             android:text="Tin Tức"
             android:textColor="@color/yellow"
             android:textSize="18dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"/>
 
         <TextView
-            android:id="@+id/idTVSubTitle"
+            android:id="@+id/tvSubTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/idTVNewsHeading"
+            android:layout_below="@id/tvNewsHeading"
             android:layout_marginStart="3dp"
             android:layout_marginTop="3dp"
             android:layout_marginEnd="3dp"
@@ -45,4 +46,5 @@
             android:text="Mô tả tin tức"
             android:textColor="@color/white" />
     </RelativeLayout>
+
 </androidx.cardview.widget.CardView>

@@ -11,46 +11,51 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/ToolBar">
+
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="App Đọc Báo"
+                android:text="CLC News"
                 android:textColor="@color/yellow"
                 android:textAlignment="center"
                 android:padding="4dp"
                 android:gravity="center"
                 android:textStyle="bold"
+                android:textSize="20dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginEnd="15dp"/>
+
         </RelativeLayout>
+
     </androidx.appcompat.widget.Toolbar>
-    
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/idRVCategories"
-        android:orientation="horizontal"
-        android:layout_below="@id/ToolBar"
-        tools:listitem="@layout/categories_rv_item"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/idRVNews"
+        android:id="@+id/rvCategories"
+        android:orientation="horizontal"
+        android:layout_below="@id/ToolBar"
+        tools:listitem="@layout/categories_rv_item"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rvNews"
         android:orientation="vertical"
-        android:layout_below="@id/idRVCategories"
+        android:layout_below="@id/rvCategories"
         tools:listitem="@layout/news_rv_item"
         android:layout_marginTop="5dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
-    
+
     <ProgressBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/idPBLoading"
+        android:id="@+id/pbLoading"
         android:layout_centerInParent="true"
         android:visibility="gone"/>
 

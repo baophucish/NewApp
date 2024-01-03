@@ -1,6 +1,5 @@
 package com.nguyenhoangbaophuc.newsapp.Model;
 
-
 import java.util.ArrayList;
 
 public class Channel {

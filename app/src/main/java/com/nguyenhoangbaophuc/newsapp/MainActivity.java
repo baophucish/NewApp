@@ -1,7 +1,5 @@
 package com.nguyenhoangbaophuc.newsapp;
 
-
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -59,7 +57,6 @@ public class MainActivity extends AppCompatActivity implements CategoryRVAdapter
         newsRVAdapter = new NewsRVAdapter(list, this);
         newsRV.setLayoutManager(new LinearLayoutManager(this));
         newsRV.setAdapter(newsRVAdapter);
-
     }
 
     private void getCategories() {

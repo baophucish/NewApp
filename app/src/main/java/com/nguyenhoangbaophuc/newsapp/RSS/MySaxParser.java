@@ -25,6 +25,6 @@ public class MySaxParser {
         } catch (Exception e) {
             Log.d("Loi: ", e.getMessage());
         }
-        return (list != null) ? list : new ArrayList<>(); // Tránh trả về null, thay vào đó trả về danh sách rỗng
+        return (list != null) ? list : new ArrayList<>(); // tranh tra ve null, thay the danh sach rong
     }
 }

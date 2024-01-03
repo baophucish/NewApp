@@ -1,7 +1,5 @@
 package com.nguyenhoangbaophuc.newsapp;
 
-
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;

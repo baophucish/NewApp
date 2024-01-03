@@ -47,7 +47,6 @@ public class MySaxHandler extends DefaultHandler {
         }
     }
 
-
     // ket thuc the
     @Override
     public void endElement(String uri, String localName, String qName) throws SAXException {
@@ -71,8 +70,6 @@ public class MySaxHandler extends DefaultHandler {
 
                     if (startIndex >= 0 && endIndex >= 0) {
                         String imageUrl = temp.substring(startIndex, endIndex);
-
-                        // Bạn có thể sử dụng imageUrl theo nhu cầu của mình
                         item.setImageUrl(imageUrl);
                     }
                 }

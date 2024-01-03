@@ -1,7 +1,5 @@
 package com.nguyenhoangbaophuc.newsapp.Model;
 
-
-
 public class Item {
     private String title;
     private String description;
@@ -27,7 +25,6 @@ public class Item {
         this.link = link;
         this.imageUrl = imageUrl;
     }
-
 
     public String getTitle() {
         return title;

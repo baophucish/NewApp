@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity implements CategoryRVAdapter
     private ProgressBar loadingPB;
     private NewsRVAdapter newsRVAdapter;
     private ArrayList<Item> list;
-    String TAG="tin-moi-nhat";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,10 +38,8 @@ public class MainActivity extends AppCompatActivity implements CategoryRVAdapter
         setContentView(R.layout.activity_main);
 
         getValue();
-        categoryRV.setAdapter(categoryRVAdapter);
         getCategories();
-//        getNews(TAG);
-        new MyAsyncTask(this, "https://vnexpress.net/rss/tin-moi-nhat.rss", newsRV).execute();
+        getNews("tin-noi-bat");
         newsRVAdapter.notifyDataSetChanged();
     }
 
@@ -50,6 +47,7 @@ public class MainActivity extends AppCompatActivity implements CategoryRVAdapter
         categoryRV = findViewById(R.id.rvCategories);
         categoryRVModelArrayList = new ArrayList<>();
         categoryRVAdapter = new CategoryRVAdapter(categoryRVModelArrayList, this, this);
+        categoryRV.setAdapter(categoryRVAdapter);
 
         newsRV = findViewById(R.id.rvNews);
         loadingPB = findViewById(R.id.pbLoading);

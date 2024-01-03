@@ -43,7 +43,6 @@ public class MySaxHandler extends DefaultHandler {
         if(qName.equalsIgnoreCase("item")){
             item = new Item();
             flagStart = true;
-
         }
     }
 
@@ -61,7 +60,6 @@ public class MySaxHandler extends DefaultHandler {
             }
         } else if (qName.equalsIgnoreCase("description")) {
             if (item != null) {
-//                item.setDescription(temp);
                 String descriptionWithoutHtml = Jsoup.parse(temp.toString()).text();
                 item.setDescription(descriptionWithoutHtml);
                 if (temp != null && temp.contains("<img src=")) {

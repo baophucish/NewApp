@@ -22,8 +22,9 @@ public class MySaxParser {
             reader.setContentHandler(handler);
             reader.parse(new InputSource(is));
             list = handler.getItems();
+
         } catch (Exception e) {
-            Log.d("Loi: ", e.getMessage());
+            Log.e("Loi: ", e.getMessage());
         }
         return (list != null) ? list : new ArrayList<>(); // tranh tra ve null, thay the danh sach rong
     }

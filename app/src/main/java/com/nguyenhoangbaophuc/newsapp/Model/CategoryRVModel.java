@@ -3,13 +3,11 @@ package com.nguyenhoangbaophuc.newsapp.Model;
 public class CategoryRVModel {
     private String category;
     private String categoryImage;
-    //
     private String categoryShow;
 
     public CategoryRVModel(String category, String categoryImage, String categoryShow) {
         this.category = category;
         this.categoryImage = categoryImage;
-        //
         this.categoryShow = categoryShow;
     }
 
